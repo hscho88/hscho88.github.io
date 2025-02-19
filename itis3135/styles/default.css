@@ -1,0 +1,26 @@
+body{
+    background-color: #fab0c8;
+}
+nav a{
+    color:rgb(245, 29, 115);
+    
+}
+body{
+    text-align:center;
+}
+
+footer a{
+    color:rgb(245, 243, 244);
+} 
+.company{
+    color:rgb(37, 14, 14);
+}
+img{
+    width:80%
+}
+figcaption{
+    font-style: italic;
+}
+.info{
+    text-align:left;
+}
