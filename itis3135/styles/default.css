@@ -16,8 +16,8 @@ footer a{
     color:rgb(37, 14, 14);
 }
 img{
-    width: 280px;
-    height:210px;
+    max-width: 280px;
+    max-height:210px;
 }
 figcaption{
     font-style: italic;
