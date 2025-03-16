@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hannah Cho's Hazy Caribou || ITIS3135 Hobby</title>
+        <link rel="stylesheet"  href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+       
+       <style type="text/css">
+            footer{
+                bottom:0;
+                position:fixed;
+
+            }
+            body{
+                font-family: helvetica;
+                padding:10px;
+                background-color:#F0F5E9;
+                
+            }
+            nav{
+                display:flex;
+                gap: 20px;
+            }
+
+            nav a{
+                text-decoration: none;
+                color:#EF8354;
+
+            }
+            header{
+                display:flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            }
+            h1{
+                font-size:large;
+                color:#04471C ;
+                padding-right: 30px;
+            }
+            span{
+                color:#EF8354;
+                
+            }
+            h2{
+                font-size: large;
+                text-align: center;
+            }
+            table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black; 
+            padding: 8px; 
+            text-align: left; 
+        }
+        
+        figure {
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2{
+            color:#306B34;
+        }
+        main p{
+            padding:10px;
+        }
+       video{
+        max-width: 100%;
+        max-height:fit-content;
+       }
+
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>SNOW <span>+</span> SNOW </h1>
+            <nav>
+                <a class="homenav" href="#home">HOME</a>
+                <a class="aboutnav" href="#about">ABOUT</a>
+                <a class="seasonsnav" href="#seasons">SEASONS</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <h2>
+                    HOME 
+                    <video autoplay muted loop>
+                        <source src="images/20659487-uhd_3840_2160_24fps.mp4" type="video/mp4">
+                    </video>
+                </h2>
+                <p class="home">A sport where you go down a mountain with 
+                    your feet latched onto a board, and you try to look cool doing it.
+                </p>
+                <p> On a more genuine note, my goal is to make snowboarding more of 
+                    an accessible activity for those who are intimidated or have never got the
+                    chance to go. It can be quite overwhelming to plan and execute a whole trip,
+                    especially if you don't have someone who is there to help you out.
+                </p>
+
+            </section>
+            <section id="about">
+                <h2>
+                    ABOUT ME 
+                </h2>
+                <p class="about"> You can refer to me as H.C or Hazy Caribou.
+                    I've gone snowboarding a total of one time, and think I'm an 
+                    expert now. 
+                </p>
+                
+                <p>As the planner in my friend group, I definetly would've appreciated a nice little guidline to how a whole
+                    snowboarding trip goes, so I made SNOW + SNOW to be just that! 
+                 </p>
+                 <p>I'm sure I didn't get every single question imaginable out there, so 
+                    feel free to reach out and shoot me a message. I'll try to get back to you ASAP.
+                 </p>
+                 <figure>
+                    <figcaption>Have a question? Fill out the form below!</figcaption>
+            
+                    <div class="form-container">
+                        <form action="submit_question.php" method="POST">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+            
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email">
+            
+                            <label for="question">Your Question:</label>
+                            <textarea id="question" name="question" rows="4" required></textarea>
+            
+                            <button type="submit">Submit Question</button>
+                        </form>
+                    </div>
+                </figure>
+            </section>
+            <section id="seasons">
+                <h2>
+                    SEASONS
+                </h2>
+                <p class="seasons"> Search your nearby ski & snowboarding resorts to know the exact
+                    season dates. *Many resorts have discounted dates or days of the week, take advantage of it!
+                </p>
+                <p>Know your snowboarding season so you can prepare and save money before it kicks off.</p>
+                <table>
+                    <caption >General snowboarding seasons around the world.</caption>
+
+                    <tr>
+                        <th>Area</th>
+                        <th>Season Start</th>
+                        <th>Season End</th>
+                    </tr>
+                    <tr>
+                        <td>North America</td>
+                        <td>Late November</td>
+                        <td>End of April</td>
+                    </tr>
+                    <tr>
+                        <td>Europe</td>
+                        <td>Late November</td>
+                        <td>May</td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <td>December</td>
+                        <td>April</td>
+                    </tr>
+                    <tr>
+                        <td>Australia & New Zealand</td>
+                        <td>Early June</td>
+                        <td>Early October</td>
+                    </tr>
+                    <tr>
+                        <td>South America</td>
+                        <td>Mid-June</td>
+                        <td>October</td>
+                    </tr>
+                </table>
+
+            </section>
+
+            <section>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p style=" font-size: small;">Designed by <a class="company" href="hcenterprises.com/">HC Enterprises</a>&copy;2025</p>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+       </a>
+       <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+         </a>
+        </footer>
+    </body>
+</html>
