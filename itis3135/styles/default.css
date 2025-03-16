@@ -1,17 +1,34 @@
 body{
-    background-color: #fab0c8;
+    background-color: #FEF3E2;
+}
+header{
+    color:#E07B39;
 }
 nav a{
-    color:rgb(245, 29, 115);
-    
+    color:#FAB12F;
+}
+nav{
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    gap:20px;
 }
 body{
     text-align:center;
 }
 
+
 footer a{
-    color:rgb(245, 243, 244);
+    color:#AF1740;
 } 
+.designed a{
+    color:black;
+}
+footer{
+    bottom:0;
+    position: fixed;
+    text-align: center;
+}
 .company{
     color:rgb(37, 14, 14);
 }
