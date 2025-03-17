@@ -9,7 +9,7 @@
        <style type="text/css">
             footer {
                 text-align: right;
-                padding-top:14px;
+                padding-top:28px;
                 bottom:0;
 
             }
@@ -20,6 +20,7 @@
                 font-family: helvetica;
                 margin: 40px;
                 background-color:#F0F5E9;
+                color:#04471C;
                 
             }
             nav{
@@ -64,11 +65,8 @@
         
             figure {
             text-align: center;
-            margin: 20px auto;
             padding: 10px;
             background-color: #fff;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
             }
         
             main p{
@@ -77,9 +75,34 @@
             video{
             max-width: 100%;
             }
-            .imagehow{
+            .imgabout{
+                background-color:#F0F5E9;
+            }
+            .imgseasons{
+                background-color:#F0F5E9;
+
+            }
+            .imgwhere{
+                background-color:#F0F5E9;
+            }
+             figcaption{
+                font-size: small;
+                text-align: center;
+            }
+            .imghow{
                 background-color: #F0F5E9;
             }
+            .roundedborder{
+                border: 2px solid brown;
+                border-radius: 10px;
+            }
+            .content{
+                display: none;
+            }
+            .content.active{
+                display:block;
+            }
+            
 
 
         </style>
@@ -89,15 +112,16 @@
         <header>
             <h1>SNOW <span>+</span> SNOW </h1>
             <nav>
-                <a class="homenav" href="#home">HOME</a>
-                <a class="aboutnav" href="#about">ABOUT</a>
-                <a class="seasonsnav" href="#seasons">SEASONS</a>
-                <a href="#where">BEST LOCATIONS</a>
+                <a  href="#home" data-target="home">HOME</a>
+                <a href="#about" data-target="about">ABOUT</a>
+                <a  href="#seasons" data-target="seasons">SEASONS</a>
+                <a href="#where" data-target="where">BEST LOCATIONS</a>
+                <a href="#why" data-target="why">WHY</a>
             </nav>
         </header>
 
         <main>
-            <section id="home">
+            <section id="home" class="content">
                 <h2>
                     HOME 
                     <video autoplay muted loop>
@@ -107,17 +131,17 @@
                 <p class="home">A sport where you go down a mountain with 
                     your feet latched onto a board, and you try to look cool doing it.
                 </p>
-                <p> On a more genuine note, my goal is to make snowboarding more of 
-                    an accessible activity for those who are intimidated or have never got the
-                    chance to go. It can be quite overwhelming to plan and execute a whole trip,
-                    especially if you don't have someone who is there to help you out.
+                <p> Despite its effortless appearance, snowboarding requires a strong sense of balance and bodily awareness.
+                    The tiniest imbalance or even change in the slope texture can throw you off, it eventually becomes second nature to you.
                 </p>
+                <p>Snowboarding can be enjoyed as a leisure or competitive sport.</p>
 
             </section>
-            <section id="about">
+            <section id="about" class="content">
                 <h2>
                     ABOUT ME 
                 </h2>
+                <figure class="imgabout"><img src="images/aboutimg.jpg"><figcaption><i>My friend and I practicing on the bunny slope</i></figcaption></figure>
                 <p class="about"> You can refer to me as H.C or Hazy Caribou.
                     I've gone snowboarding a total of one time, and think I'm an 
                     expert now. 
@@ -126,12 +150,10 @@
                 <p>As the planner in my friend group, I definetly would've appreciated a nice little guidline to how a whole
                     snowboarding trip goes, so I made SNOW + SNOW to be just that! 
                  </p>
-                 <p>I'm sure I didn't get every single question imaginable out there, so 
-                    feel free to reach out and shoot me a message. I'll try to get back to you ASAP.
-                 </p>
+                 
                  
             </section>
-            <section id="seasons">
+            <section id="seasons" class="content">
                 <h2>
                     SEASONS
                 </h2>
@@ -173,23 +195,24 @@
                         <td>October</td>
                     </tr>
                 </table>
+                <figure class="imgseasons"><img src="images/seasonsimg.png"><figcaption><i>Driving to our airbnb near my closest ski resort.</i></figcaption></figure>
 
             </section>
 
-            <section id="where">
+            <section id="where" class="content">
                 <h2>BEST LOCATIONS</h2>
-                <p>The best location is the mountain closest to you! 
-                </p>
-                <p>It'll be the most accessible, affordable and comfortable since there won't be an added
-                    cultural difference to the trip as a whole.
-                </p>
-                <p> I always look at reviews, reddit, facebook, and youtube to get a sense of the mountain!
-                </p>
-                
+                <figure class="imgwhere">
+                    <img src="images/whereimg.jpg"><figcaption><i>The snowier the better, go somewhere real cold!</i></figcaption>
+                </figure>
+                <p><b>The best location is the mountain closest to you! </b>
+                It'll be the most accessible, affordable and comfortable since there won't be an added
+                    cultural difference to the trip as a whole.</p>
 
+                <p class="roundedborder"> I always look at reviews, reddit, facebook, and youtube to get a sense of the mountain!
+                </p>
             </section>
 
-            <section id="how">
+            <section id="how" class="content">
                 <h2>HOW</h2>
                 
                 <ol>
@@ -206,10 +229,29 @@
                     <li><b>Book it.</b> Make it happen and get excited!</li>
                 </ol>
                 <p>Wishing you the best on your snowboarding journey and stay safe out there ᨒ❄︎</p>
-                <figure class="imagehow">
+                <figure class="imghow">
                     <img src="images/howimg.jpg">
-                    <figcaption><i>Snowboards awaiting their owners</i></figcaption>
+                    <figcaption><i>Proper snowboarding outfit and equipment.</i></figcaption>
                 </figure>
+            </section>
+
+            <section id="why" class="content">
+                <h2>WHY</h2>
+                <p>Snowboarding is a super cool sport with even cooler people. Most of the people you meet while snowboarding are going to be 
+                    kind, chill, and just more down to earth than the average folk. Maybe it's the energy of the mountain, the cool weather, or 
+                    the hot cocoa but the culture is just top-tier. 
+                </p>
+                <p>Other than it being good for your physicality, it'll be great for developing a resiliant mindset.
+                    You fall so many times, but the best part of the sport is getting back up and doing a run just right. 
+                </p>
+            </section>
+            <section id="AI" class="content">
+                <h2>AI Prompts</h2>
+                <ul>
+                    <li>
+                        "How to make html sections appear one at a time using css or javascript."
+                    </li>
+                </ul>
             </section>
 
         </main>
@@ -223,5 +265,36 @@
         <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
          </a>
         </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {  // Ensure DOM is ready
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('.content');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();  // Prevent default anchor behavior
+            const targetId = link.getAttribute('data-target');
+
+            // Hide all sections
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the targeted section
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            // Update the URL hash without jumping
+            history.pushState(null, '', `#${targetId}`);
+        });
+    });
+
+    // Display the first section (Home) by default
+    const firstSection = document.querySelector('.content');
+    if (firstSection) firstSection.classList.add('active');
+});
+
+          </script>
     </body>
 </html>
