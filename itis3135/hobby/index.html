@@ -8,20 +8,18 @@
        
        <style type="text/css">
             footer {
-                text-align: right;
-                padding-top:28px;
+                text-align: center;
                 bottom:0;
-
             }
             footer a{
                 color:grey;
             }
             body{
-                font-family: helvetica;
-                margin: 40px;
+                font-family: Arial, Helvetica, sans-serif;
                 background-color:#F0F5E9;
                 color:#04471C;
-                
+                margin:40px;
+
             }
             nav{
                 display:flex;
@@ -103,6 +101,9 @@
             .content[class~="active"]{
                 display:block;
             }
+            #AI{
+                padding-bottom:280px;
+            }
             
 
 
@@ -126,11 +127,12 @@
             <section id="home" class="content">
                 <h2>
                     HOME 
-                    <figure><video autoplay muted loop>
+                    
+                </h2>
+                <figure><video autoplay muted loop>
                         <source src="images/vid1.mp4" type="video/mp4">
                     </video><figcaption><i>Gliding down a mountain</i></figcaption>
                     </figure>
-                </h2>
                 <p class="home">A sport where you go down a mountain with 
                     your feet latched onto a board, and you try to look cool doing it.
                 </p>
@@ -199,7 +201,6 @@
                     </tr>
                 </table>
                 <figure class="imgseasons"><img src="images/seasonsimg.png"><figcaption><i>Driving to our airbnb near my closest ski resort.</i></figcaption></figure>
-
             </section>
 
             <section id="where" class="content">
@@ -279,7 +280,7 @@
     const navLinks = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('.content');
 
-    navLinks.forEach(link=> {
+    navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();  // Prevent default anchor behavior
             const targetId = link.getAttribute('data-target');
