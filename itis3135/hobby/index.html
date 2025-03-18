@@ -66,7 +66,8 @@
             figure {
             text-align: center;
             padding: 10px;
-            background-color: #fff;
+            background-color: #F0F5E9;
+            font-weight: 100;
             }
         
             main p{
@@ -99,7 +100,7 @@
             .content{
                 display: none;
             }
-            .content.active{
+            .content[class~="active"]{
                 display:block;
             }
             
@@ -117,6 +118,7 @@
                 <a  href="#seasons" data-target="seasons">SEASONS</a>
                 <a href="#where" data-target="where">BEST LOCATIONS</a>
                 <a href="#why" data-target="why">WHY</a>
+                <a href="#AI" data-target="AI">AI PROMPTS</a>
             </nav>
         </header>
 
@@ -124,9 +126,10 @@
             <section id="home" class="content">
                 <h2>
                     HOME 
-                    <video autoplay muted loop>
+                    <figure><video autoplay muted loop>
                         <source src="images/vid1.mp4" type="video/mp4">
-                    </video>
+                    </video><figcaption><i>Gliding down a mountain</i></figcaption>
+                    </figure>
                 </h2>
                 <p class="home">A sport where you go down a mountain with 
                     your feet latched onto a board, and you try to look cool doing it.
@@ -142,13 +145,13 @@
                     ABOUT ME 
                 </h2>
                 <figure class="imgabout"><img src="images/aboutimg.jpg"><figcaption><i>My friend and I practicing on the bunny slope</i></figcaption></figure>
-                <p class="about"> You can refer to me as H.C or Hazy Caribou.
+                <p class="about"> Hi there, I'm Hazy Caribou.
                     I've gone snowboarding a total of one time, and think I'm an 
-                    expert now. 
+                    expert now. I love trying new sports and winter sports have a special place in my heart. 
                 </p>
                 
-                <p>As the planner in my friend group, I definetly would've appreciated a nice little guidline to how a whole
-                    snowboarding trip goes, so I made SNOW + SNOW to be just that! 
+                <p>Once I can financially afford it, I would love to dive super deep into the hobby and get really skilled at it.
+                    It's thankfully a sport that people of all ages enjoy so I'm not in too much of a rush to get experienced ASAP.
                  </p>
                  
                  
@@ -237,6 +240,7 @@
 
             <section id="why" class="content">
                 <h2>WHY</h2>
+                <figure><img src="images/whyimg.jpg"><figcaption><i>Snowboarders on a lift</i></figcaption></figure>
                 <p>Snowboarding is a super cool sport with even cooler people. Most of the people you meet while snowboarding are going to be 
                     kind, chill, and just more down to earth than the average folk. Maybe it's the energy of the mountain, the cool weather, or 
                     the hot cocoa but the culture is just top-tier. 
@@ -251,6 +255,10 @@
                     <li>
                         "How to make html sections appear one at a time using css or javascript."
                     </li>
+                    <li>
+                        "How to fix, Error: Expected parentheses around arrow function argument. on Javascript "
+                    </li>
+                    <li>"Make border rounded in HTML"</li>
                 </ul>
             </section>
 
@@ -271,7 +279,7 @@
     const navLinks = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('.content');
 
-    navLinks.forEach(link => {
+    navLinks.forEach(link=> {
         link.addEventListener('click', (event) => {
             event.preventDefault();  // Prevent default anchor behavior
             const targetId = link.getAttribute('data-target');
