@@ -7,9 +7,12 @@
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
        
        <style type="text/css">
+
             footer {
                 text-align: center;
                 bottom:0;
+                height:10px;
+                width:100%;
             }
             footer a{
                 color:grey;
@@ -18,12 +21,15 @@
                 font-family: Arial, Helvetica, sans-serif;
                 background-color:#F0F5E9;
                 color:#04471C;
-                margin:40px;
+                padding-right:40px;
+                padding-left: 40px;
+                padding-top: 30px;
+                padding-bottom: 60px;
 
             }
             nav{
                 display:flex;
-                gap: 20px;
+                gap: 25px;
             }
 
             nav a{
@@ -72,7 +78,7 @@
             padding:10px;
             }
             video{
-            max-width: 100%;
+            max-width: 90%;
             }
             .imgabout{
                 background-color:#F0F5E9;
@@ -102,7 +108,7 @@
                 display:block;
             }
             #AI{
-                padding-bottom:280px;
+                padding-bottom:300px;
             }
             
 
@@ -280,13 +286,13 @@
     const navLinks = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('.content');
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
         link.addEventListener('click', (event) => {
             event.preventDefault();  // Prevent default anchor behavior
             const targetId = link.getAttribute('data-target');
 
             // Hide all sections
-            sections.forEach(section => section.classList.remove('active'));
+            sections.forEach((section) => section.classList.remove('active'));
 
             // Show the targeted section
             const targetSection = document.getElementById(targetId);
