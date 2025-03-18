@@ -4,6 +4,9 @@ body{
 header{
     color:#E07B39;
 }
+html{
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+}
 nav a{
     color:#FAB12F;
 }
