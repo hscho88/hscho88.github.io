@@ -10,29 +10,31 @@
             html{
             height:100%;
             }
-
+            
+            
             footer {
                 text-align: center;
                 bottom:0;
-                height:10px;
                 width:100%;
                 margin-top: auto;
-                background-color: #EF8354;
+                color: #EF8354;
+                padding-top: 20px;
+                font-size: smaller;
+
             }
             footer a{
-                color:grey;
+                color:#EF8354;
+                
             }
+           
             body{
                 font-family: Arial, Helvetica, sans-serif;
                 background-color:#F0F5E9;
                 color:#04471C;
-                padding-right:40px;
-                padding-left: 40px;
-                padding-top: 30px;
-                padding-bottom: 60px;
                 min-height: 100%;
                 display:flex;
                 flex-direction: column;
+                margin: 20px 40px 0 40px;
 
             }
             nav{
@@ -53,7 +55,7 @@
             }
             h1{
                 font-size:large;
-                color:#04471C ;
+                color:#306B34;
                 padding-right: 30px;
             }
             span{
@@ -87,6 +89,7 @@
             }
             video{
             max-width: 90%;
+            max-height:80%;
             }
             .imgabout{
                 background-color:#F0F5E9;
@@ -111,12 +114,22 @@
             }
             .content{
                 display: none;
+                flex:1;
             }
             .content[class~="active"]{
                 display:block;
             }
-            
-            
+            .list{
+                padding-bottom: 0px;
+                font-weight:bold;
+            }
+            #where li{
+                list-style: none;
+            }
+            #where li::before {
+                content: "ᨒ↟";  
+                font-weight: bold;
+            }
 
 
         </style>
@@ -148,10 +161,11 @@
                 <p class="home">A sport where you go down a mountain with 
                     your feet latched onto a board, and you try to look cool doing it.
                 </p>
-                <p> Despite its effortless appearance, snowboarding requires a strong sense of balance and bodily awareness.
-                    The tiniest imbalance or even change in the slope texture can throw you off, it eventually becomes second nature to you.
+                <p> Despite its effortless appearance, snowboarding requires a strong sense of balance and bodily awareness. You use 
+                    your weight to control the snowboard's direction and speed, making it a tough learning curve.
+                    The tiniest imbalance or even change in the slope texture can throw you off, but it eventually becomes second nature to you.
                 </p>
-                <p>Snowboarding can be enjoyed as a leisure or competitive sport.</p>
+                <p>Snowboarding can be enjoyed as a leisure or competitive sport!</p>
 
             </section>
             <section id="about" class="content">
@@ -221,8 +235,21 @@
                     <img src="images/whereimg.jpg"><figcaption><i>The snowier the better, go somewhere real cold!</i></figcaption>
                 </figure>
                 <p><b>The best location is the mountain closest to you! </b>
-                It'll be the most accessible, affordable and comfortable since there won't be an added
-                    cultural difference to the trip as a whole.</p>
+                It'll be the most accessible, affordable, and easiest to visit again.</p>
+                <p class="list">But if you want extravagent, here are some locations people bucketlist:</p>
+                <ul>
+                    <li>
+                         Hokkaido, Japan
+                    </li>
+                    <li>
+                        Les Trois Vallées, France
+                    </li>
+                    <li>
+                        Kitzbüheler Alps, Austria
+                    </li>
+                    <li> St Moritz, Switzerland</li>
+                    <li> Whistler Blackcomb, Canada</li>
+                </ul>
 
                 <p class="roundedborder"> I always look at reviews, reddit, facebook, and youtube to get a sense of the mountain!
                 </p>
@@ -278,12 +305,13 @@
         </main>
 
         <footer>
-            <p style=" font-size: small;">Designed by <a class="company" href="../hcenterprises.com/">HC Enterprises</a>&copy;2025, <i>Certified in <a href="https://www.freecodecamp.org/certification/hannahc27/responsive-web-design">Responsive Web Design</a></i></p>
+            <p >Designed by <a class="company" href="../hcenterprises.com/">HC Enterprises</a> &copy;2025, 
+                <i>Certified in <a href="https://www.freecodecamp.org/certification/hannahc27/responsive-web-design">Responsive Web Design</a></i></p>
             <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-        <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        <img style="border:0;width:60px;height:25px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
        </a>
        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        <img style="border:0;width:60px;height:25px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
          </a>
         </footer>
 
