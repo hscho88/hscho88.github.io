@@ -1,84 +1,157 @@
-main { max-width: 1200px; /* Adjust as needed */ 
- width: 90%; /* Adjust percentage based on design requirements */
- margin: 0 auto; /* Centers the content horizontally */ }
+        body {
+            background-color: #f3e9db;
+            font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+            text-align: center;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
 
-body{
-    background-color: #f3e9db;
-}
-header{
-    color:#E07B39;
-}
-html{
-    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
-}
-nav a{
-    color:#f89540;
-}
-nav{
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    gap:20px;
-}
-body{
-    text-align:center;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+        header {
+            color: #E07B39;
+        }
 
+        html {
+            height: 100%;
+        }
 
-footer a{
-    color:#AF1740;
-    text-align: center;
-} 
-.designed a{
-    color:black;
-}
-html{
-    height:100%;
-}
-footer{
-    bottom:0;
-    text-align: center;
-    margin-top: auto;
-}
-.company{
-    color:rgb(37, 14, 14);
-}
-img{
-    max-width: 280px;
-    max-height:210px;
-}
-figcaption{
-    font-style: italic;
-}
-.info{
-    text-align:left;
+        nav {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #f89540;
+            text-decoration: none;
+        }
+
+        footer {
+            bottom: 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #AF1740;
+        }
+
+        .designed a {
+            color: black;
+        }
+
+        .company {
+            color: rgb(37, 14, 14);
+        }
+
+        img {
+            max-width: 280px;
+            max-height: 210px;
+        }
+
+        figcaption {
+            font-style: italic;
+        }
+
+        .info, .lastinfo {
+            text-align: left;
+        }
+
+        .lastinfo {
+            padding-bottom: 20px;
+        }
+
+        /* Main content container */
+        main {
+            max-width: 1200px; /* Adjust as needed */
+            width: 90%; /* Adjust percentage based on design requirements */
+            margin: 0 auto; /* Centers the content horizontally */
+        }
+
+        /* Rule Overrides for Laptops / Small Screens */
+        @media screen and (min-width: 981px) and (max-width: 1400px) {
+            main {
+                width: 85%;
+            }
+
+            #colorbox {
+                width: fit-content;
+            }
+        }
+
+        /* Rule Overrides for Tablet Devices */
+        @media screen and (min-width: 601px) and (max-width: 980px) {
+            main {
+                width: 95%;
+            }
+
+            #colorbox {
+                width: fit-content;
+            }
+
+            img {
+                max-width: 250px; /* Adjust image size for tablets */
+                max-height: 190px;
+            }
+
+            .links {
+                font-size: 14px; /* Adjust font size for tablet */
+            }
+        }
+
+        /* Rule Overrides for Mobile Devices */
+        @media screen and (min-width: 370px) and (max-width: 600px) {
+            main {
+                width: 100%;
+                padding: 10px; /* Padding for mobile devices */
+            }
+
+            #colorbox {
+                width: fit-content;
+            }
+
+            img {
+                max-width: 200px; /* Adjust image size for smaller screens */
+                max-height: 150px;
+            }
+
+            .links {
+                font-size: 12px; /* Adjust font size for mobile */
+                padding: 5px;
+                text-align: center; /* Center links on mobile */
+            }
+
+            .links a {
+                display: block; /* Stack links vertically on small screens */
+                margin: 5px 0; /* Spacing between links */
+            }
+
+            .designed {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+
+        /* Very Small Screens */
+        @media screen and (max-width: 370px) {
+            main {
+                padding: 5px; /* Smaller padding for very small screens */
+            }
+
+            img {
+                max-width: 180px;
+                max-height: 130px;
+            }
+
+            .links {
+                font-size: 10px; /* Make text even smaller for very small screens */
+            }
+
+            .designed {
+                font-size: 10px; /* Smaller font for footer on very small screens */
+            }
+        }
     
-}
-.lastinfo{
-    text-align: left;
-    padding-bottom: 20px;
-}
-
-/* Rule Overrides For Laptops / Small Screens */
-@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-    #colorbox {
-        width:fit-content;
-    }
-}
-
-/* Rule Overrides For Tablet Devices */
-@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    #colorbox {
-        width:fit-content;
-    }
-}
-
-/* Rule Overrides For Mobile Devices */
-@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    #colorbox {
-        width:fit-content;
-    }
-}
