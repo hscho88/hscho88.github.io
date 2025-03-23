@@ -55,6 +55,11 @@ figcaption{
 }
 .info{
     text-align:left;
+    
+}
+.lastinfo{
+    text-align: left;
+    padding-bottom: 20px;
 }
 
 /* Rule Overrides For Laptops / Small Screens */
