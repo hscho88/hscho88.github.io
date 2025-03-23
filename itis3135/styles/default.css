@@ -3,7 +3,7 @@ main { max-width: 1200px; /* Adjust as needed */
  margin: 0 auto; /* Centers the content horizontally */ }
 
 body{
-    background-color: #FEF3E2;
+    background-color: #f3e9db;
 }
 header{
     color:#E07B39;
@@ -57,32 +57,23 @@ figcaption{
     text-align:left;
 }
 
-/* MOBILE RULES */
-/* Remove Initial */
-html, body {
-    all:initial;
-}
-/* Foundational Three */
-main, .maincontainer {
-    width: 95%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     #colorbox {
-        background-color:yellow;
+        background-color:rgb(249, 232, 193);
     }
 }
+
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
     #colorbox {
-        background-color:orange;
+        background-color:rgb(249, 232, 193);
     }
 }
+
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 580px ) {
     #colorbox {
-        background-color:red;
+        background-color:rgb(249, 232, 193);
     }
 }
