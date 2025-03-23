@@ -81,7 +81,7 @@ main, .maincontainer {
     }
 }
 /* Rule Overrides For Mobile Devices */
-@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+@media screen and ( min-width: 370px ) and ( max-width: 580px ) {
     #colorbox {
         background-color:red;
     }
