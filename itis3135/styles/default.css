@@ -65,20 +65,20 @@ figcaption{
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     #colorbox {
-        background-color:rgb(249, 232, 193);
+        width:fit-content;
     }
 }
 
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
     #colorbox {
-        background-color:rgb(249, 232, 193);
+        width:fit-content;
     }
 }
 
 /* Rule Overrides For Mobile Devices */
-@media screen and ( min-width: 370px ) and ( max-width: 570px ) {
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     #colorbox {
-        background-color:rgb(249, 232, 193);
+        width:fit-content;
     }
 }
