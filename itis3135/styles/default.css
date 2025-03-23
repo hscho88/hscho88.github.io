@@ -72,7 +72,7 @@ figcaption{
 }
 
 /* Rule Overrides For Mobile Devices */
-@media screen and ( min-width: 370px ) and ( max-width: 550px ) {
+@media screen and ( min-width: 370px ) and ( max-width: 570px ) {
     #colorbox {
         background-color:rgb(249, 232, 193);
     }
