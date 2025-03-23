@@ -97,9 +97,11 @@ figcaption{
         font-size: 16px;
     }
     footer img{
-        max-width: 57px;
-        max-height: 26px;
+        max-width: 72px;
+        max-height: 30px;
     }
+    
+    
 }
 
 /* Mobile Styling */
@@ -130,7 +132,7 @@ figcaption{
         font-size: 14px; 
     }
     footer img{
-        max-width: 55px;
-        max-height: 22px;
+        max-width: 72px;
+        max-height: 30px;
     }
 }
