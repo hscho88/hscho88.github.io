@@ -61,6 +61,9 @@ figcaption{
     text-align: left;
     padding-bottom: 20px;
 }
+#topnav{
+    padding-bottom: 15px;
+}
 
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
