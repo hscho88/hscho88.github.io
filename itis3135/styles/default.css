@@ -145,10 +145,11 @@ figcaption{
         margin-bottom: 10px;
     text-align: left;
     }
-    form input[type="text"], form textarea {
+    form input[type="text"], form value {
         display: block;
         margin-bottom: 10px;
-        width: 80%;
+        width: 70%;
+    
     }
    
     #div-output p{
