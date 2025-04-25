@@ -139,7 +139,9 @@ figcaption{
         max-height: 30px;
     }
 }
-    
+    form{
+        padding-left: 80px;
+    }
     form label, form input , form button{
         display: block;
         margin-bottom: 10px;
