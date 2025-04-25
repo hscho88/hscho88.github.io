@@ -140,7 +140,7 @@ figcaption{
     }
 }
     form{
-        padding-left: 80px;
+        padding-left: 180px;
     }
     form label, form input , form button{
         display: block;
@@ -150,7 +150,7 @@ figcaption{
     form input[type="text"], form value {
         display: block;
         margin-bottom: 10px;
-        width: 70%;
+        width: 60%;
     
     }
    
