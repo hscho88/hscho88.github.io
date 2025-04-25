@@ -50,13 +50,14 @@
         const anythingElse = document.getElementById("anythingElse").value;
     
         // Collect course info
-        const courseDivs = document.querySelectorAll("#courseContainer .course");
-        let courseList = "";
-        courseDivs.forEach(course => {
-            const title = course.querySelector('[name="courseTitle"]').value;
-            const desc = course.querySelector('[name="courseDesc"]').value;
-            courseList += `<li><strong>${title}</strong>: ${desc}</li>`;
-        });
+const courseDivs = document.querySelectorAll("#courseContainer .course");
+let courseList = "";
+courseDivs.forEach((course) => {  // Added parentheses around 'course'
+    const title = course.querySelector('[name="courseTitle"]').value;
+    const desc = course.querySelector('[name="courseDesc"]').value;
+    courseList += `<li><strong>${title}</strong>: ${desc}</li>`;
+});
+
     
         // Display info
         outputDiv.innerHTML = `
