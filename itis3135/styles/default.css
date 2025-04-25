@@ -1,6 +1,6 @@
 main { max-width: 1200px; /* Adjust as needed */ 
  width: 90%; /* Adjust percentage based on design requirements */
- margin: 0 auto; /* Centers the content horizontally */ }
+}
 
 body{
     background-color: #f3e9db;
@@ -139,3 +139,34 @@ figcaption{
         max-height: 30px;
     }
 }
+    
+    form label, form input , form button{
+        display: block;
+        margin-bottom: 10px;
+    text-align: left;
+    }
+    form input[type="text"], form textarea {
+        display: block;
+        margin-bottom: 10px;
+        width: 80%;
+        padding: 8px;
+    }
+   
+    #div-output p{
+        text-align: left;
+    }
+    #div-output ul {
+        text-align: left;
+        padding-left: 20px; /* optional indent */
+        list-style-type: disc;
+    }
+    #courseContainer li{
+        text-align: left;
+    }
+    .image-caption {
+        text-align: center;
+        font-style: italic;
+        margin-top: 5px;
+    }
+
+    

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Hazy Caribou 𐂂 || ITIS 3135 || BYO Intro"</title>
+    <link rel="stylesheet"  href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>   
+
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            <div id="div-output"></div>
+<form id="personalForm">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Hannah Cho" required>
+            
+            <!-- Mascot -->
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" value="Hazy Caribou" required>
+            
+            <!-- Image -->
+            <label for="image">Image (PNG/JPG only):</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg" required>
+            
+            <!-- Image Caption -->
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imageCaption" name="imageCaption" value="Me outside a Boston cafe." required>
+            
+            <!-- Personal Background -->
+            <label for="personalBackground">Personal Background:</label>
+            <input type="text" id="personalBackground" name="personalBackground" value="I’m 20, born and kind of raised in Georgia before coming to Charlotte in 2014. I love tea, trying random activities, and am currently in a snowboarding and horseback riding phase." required>
+            
+            <!-- Professional Background -->
+            <label for="professionalBackground">Professional Background:</label>
+            <input type="text" id="professionalBackground" name="professionalBackground" value="I’ve worked in the food and drink industry since I was 15 and am currently a sales associate at a store right now." required>
+            
+            <!-- Academic Background -->
+            <label for="academicBackground">Academic Background:</label>
+            <input type="text" id="academicBackground" name="academicBackground" value="Im working towards my BA of CS in HCI with a minor in English." required>
+            
+            <!-- Web Development Background -->
+            <label for="webDevelopmentBackground">Background in Web Development:</label>
+            <input type="text" id="webDevelopmentBackground" name="webDevelopmentBackground" value="Everything I’ve learned is from course requirements here at UNCC, I'm still very much a beginner in programming. I want to dive deeper into useful languages and learn the ones I would use in HCI and web development." required>
+            
+            <!-- Primary Computer Platform -->
+            <label for="platform">Primary Computer Platform:</label>
+            <input type="text" id="platform" name="platform" value="Windows" required>
+
+            <!-- Courses Currently Taking -->
+            <label for="courses">Courses Currently Taking:</label>
+            <div id="courseContainer">
+                <div class="course">
+                    <label>Course Title:</label>
+                    <input id="courseTitle" name="courseTitle" value="ITIS 3135" required>
+
+                    <label>Course Description:</label>
+                    <input type="text" id="courseDesc" name="courseDesc" value="Required course, the skills it surrounds will be greatly beneficial." required>
+
+                    <button type="button" class="deleteBtn">Delete</button>
+                </div>
+            </div>
+
+            <button type="button" id="addCourseBtn">Add Course</button>
+            
+            <!-- Funny Thing -->
+            <label for="funnyThing">Funny/interesting thing?</label>
+            <input type="text" id="funnyThing" name="funnyThing" value="I've watched New Girl probably more than 10 times and Winston is my favorite character.">
+            
+            <!-- Anything Else -->
+            <label for="anythingElse">Anything else?</label>
+            <input type="text" id="anythingElse" name="anythingElse" value="I'd also like to share: I am in need of book recommendations(I love fantasy and sci-fi)">
+            
+            <!-- Agreement Checkbox -->
+            <label for="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+            </label>
+    
+            <input id="submitbtn" type="submit" value="Submit">    
+              
+        </form>
+<input type="reset" id="resetBtn" value="Reset">  
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
