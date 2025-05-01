@@ -58,3 +58,6 @@ footer{
     font-size: small;
     padding-left: 150px;
 }
+footer a{
+    color:green;
+}
